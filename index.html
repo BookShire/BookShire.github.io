@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/ -->
+<html>
+
+<head>
+  <title>BookShire</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+
+</head>
+
+<body>
+  <nav>
+    <ul class="embrulho">
+      <li class="active"><a title="Página inicial" href="index.html">Home</a></li>
+      <li class="nav"><a title="Sobre nós" href="/html/sobre.html">Sobre nós</a></li>
+      <li class="nav"><a title="Pitch" href="/html/pitch.html">Pitch</a></li>
+    </ul>
+  </nav>
+
+  <section id="header_fundo">
+    <div class="embrulho">
+        <div class="titleWebsite">
+          <h1>BookShire</h1>
+        </div>
+
+      </div>
+
+      <div class="embrulho">
+        <div id="header_frase">
+          <h2>A leitura do mundo precede a leitura da palavra - Paulo Freire</h2>
+        </div>
+      </div>
+    <!--       barra de navegação -->
+    </section>
+
+  <main>
+    <!--PROTOTIPO TEASER-->
+    <div id="prototipo_teaser" class ="embrulho">
+      <img src = "assets/capas/prototipoTeaser.gif"  >
+
+      <div class="container">
+        <h3>Teste nosso protótipo de primeira mão!</h3>
+
+        <p>
+          Acesse a visualização das nossas telas pelo Figma no seu navegador e confira
+          as funcionalidades do nosso app em fase de desenvolvimento. 
+        </p><br>
+        
+        <button onclick="abrirFigma()">Acessar agora</button>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <!--       <h2>Equipe Bookshire:</h2> -->
+    <h2 id="rodapeTxt">Contate a nossa equipe: </h2>
+
+    <a href="mailto:bookshireteam@gmail.com" target="_blank" title="E-mail">
+      <img src="https://t4techblog.com/wp-content/uploads/2020/10/workspace-new-gmail-icon-1024x1024.png" alt="E-mail" />
+    </a>
+
+    <a href="https://www.instagram.com/thebookshire_/" target="_blank" title="Instagram">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" alt="Instagram" />
+    </a>
+
+    <a href="https://www.tiktok.com/@bookshiretok?_t=8ae44KKEao9&_r=1" target="_blank" title="TikTok">
+      <img src="https://seeklogo.com/images/T/tiktok-icon-logo-1CB398A1BD-seeklogo.com.png" alt="TikTok" />
+    </a>
+
+    <a href="https://www.figma.com/proto/51dn2FsdWAoDGUVfpqTpe0/BookShire_an%C3%BAncios?node-id=1%3A43&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A43" title="Figma" target="_blank">
+      <img src="assets/rodape/logo-figma.png" alt="Figma">
+    </a>
+
+    <!--
+    <a href="https://www.linkedin.com/in/rayssabuarque" title= "Rayssa Malheiros" target="_blank">
+      <img src= "assets/perfil/rayssa.jpg" alt= "Garota de boné usando óculos.">
+    </a>
+
+     <a href= "https://br.linkedin.com/in/riquelmy-marley" title="Riquelmy Marley" target="_blank">
+      <img src= "assets/perfil/riquelmy.jpg" alt= "Garoto usando óculos.">
+    </a>
+
+    <a href= "https://www.linkedin.com/in/sara-marcelli-da-silva-santos-a64342214" title = "Sara Marcelli" target="_blank">
+      <img src= "assets/perfil/sara.jpg" alt= "Garota usando óculos.">
+    </a>
+  </footer>
+    </div> -->
+
+  </footer>
+  
+  <!-- script do botão de abrir protótipo -->
+  <script>
+    function abrirFigma(){
+      window.open('https://www.figma.com/proto/51dn2FsdWAoDGUVfpqTpe0/BookShire_an%C3%BAncios?node-id=1%3A43&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A43', '_blank');
+    }
+  </script>
+  <!-- link pro js das frases -->
+  <script src="/js/frases.js" defer></script>
+</body>
+
+</html>
