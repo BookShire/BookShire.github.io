@@ -1,0 +1,16 @@
+#prototipo_teaser{
+    margin-top: 15px;
+    width: 70%;
+    align-items:flex-start;
+}
+
+#prototipo_teaser img{
+    height: 550px;
+    width: auto;
+    border-radius: 0;
+}
+
+#prototipo_teaser .container{
+    padding: 20px 40px;
+    display: block;
+}

@@ -1,0 +1,335 @@
+/*font-family: 'Advent Pro', sans-serif; -- TITULO 
+font-family: 'Roboto Mono', monospace; -- TEXTO
+font-family: 'Roboto', sans-serif; -- TEXTO
+font-family: 'Staatliches', cursive; -- SUBTITULO
+*/
+      @import url('https://fonts.googleapis.com/css2?  family=Abril+Fatface&family=Roboto+Mono&family=Staatliches&display=swap');
+
+/* IMPORT DA NOVA FONTE DE TITULO */
+/* font-family: 'Playfair Display', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&display=swap');
+
+/*IMPORT DA FONTE ROBOTO DE TEXTOS*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*LETRA DE TESTE DOS TEXTOS*/
+   /* @import url('https://fonts.googleapis.com/css2? family= Roboto+Condensed:wght@300 & family= Staatliches & display=swap');*/
+
+  @import url('https://fonts.googleapis.com/css2? family= Open+Sans:wght@600 & family= Roboto+Condensed:wght@300 & display=swap'); 
+
+/* TAGS DE SEÇÕES */
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
+body {
+  padding-top: 40px;
+  background-color: white; 
+  width: 100%;
+  height: 100%;
+}
+
+img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin:0;
+  display: block;
+}
+
+main{
+  height: auto;
+  
+  padding-bottom: 60px;
+}
+
+main img{
+  border-radius: 30px;
+}
+
+.embrulho{
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+/* TAGS DE TEXTO */
+
+/* titulos */
+h1 {
+  font-family: 'Advent Pro', sans-serif;
+  color: white;
+  font-size: 75px;
+  text-align: left;
+}
+
+/* frase de autor*/
+h2 {
+  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Staatliches', cursive;*/
+  color: #C8D1E2;
+  padding: 5px;
+  padding-left: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* subtitulos */
+h3 {
+  font-family: 'Staatliches', cursive;
+  color: #FF6D1F;
+  margin-bottom: 15px;
+  font-size: 30px;
+  margin-top: 25px;
+}
+
+h4{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  /*background-color: #e09515;*/
+  font-size: 25px;
+  padding: 20px;
+  border-radius: 0 0 30px 30px;
+  color: #0D1527;
+}
+
+/* texto normal */
+p {
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 8px;
+  font-size: 20px;
+}
+
+p a {
+  color:#ffbc47;
+  text-decoration: underline;
+}
+
+.textoIcone{
+  margin: auto;
+  width: 250px;
+  height: 250px;
+}
+
+/*BARRA DE NAVEGAÇÃO*/
+nav{
+  top: 0;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  
+/*   border-bottom-color: #0D1527; */
+  border-bottom-color: #C8D1E2;
+  filter: drop-shadow(0 6px 10px rgba(0,0,0,.04)) drop-shadow(0 1px 18px rgba(0,0,0,.06)) drop-shadow(0 3px 5px rgba(0,0,0,.12));
+}
+
+nav ul{
+  list-style-type: none;
+  overflow: hidden;
+}
+
+nav ul li{
+  float: left;
+  padding: 5px; 
+}
+
+nav li a {
+  color: #0D1527;
+  padding: 30px 20px 30px 20px; 
+  font-size: 25px;
+  text-decoration: none;
+  font-family: 'Staatliches', cursive;
+}
+
+/* essa classe é a que mexe no item da página que vc esta vendo da <nav> */
+.active {
+  height: 100%;
+  display: block;
+  border-bottom: 5px solid; 
+  border-color: #23458A;
+}
+
+.active:hover{
+  background-color: #C8D1E2;
+}
+
+.nav {
+  display: block;
+  border-bottom: 5px solid; 
+  border-color: white;
+  background-color: white;
+}
+
+.nav:hover {
+  border-color: #C8D1E2;
+  background-color: #C8D1E2;
+}
+
+
+/* HEADER OU CAPA */
+#header_fundo{
+  margin-top: 0;
+  display: block;
+  width: 100%;
+  background-color: #152139;
+  background-image: url('../assets/capas/fundo.svg');
+  background-repeat: no-repeat;
+  /*background-position: top;*/
+  background-size: cover;
+}
+
+#header_frase{
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+#header_meio .embrulho{
+  margin: auto;
+  width: 50%;
+}
+
+.titleWebsite {
+  margin: auto;
+  height: 100%;
+  font-size: 40px;
+  text-align: center;
+  cursor: default;
+  padding: 90px;
+  padding-bottom: 5px;
+}
+
+/* BARRA DE PESQUISA */
+#pesquisaBarra {
+  width: 100%;
+  height: 45%;
+  margin: 30px, 5px;
+}
+
+.container input[type=text] {
+  padding: 10px;
+  margin-left: 10%;
+  border-radius: 10px 0px 0px 10px;
+  font-size: 17px;
+  border: 1px solid #0D1527;
+  float: left;
+  width: 75%;
+  background: #f1f1f1;
+}
+.container button {
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 20px;
+  border: none;
+  font-size: 17px;
+  float: left;
+  background: #1F3B6F;
+  color: white;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background: #ffbc47;
+}
+
+.pesquisaItem{
+  margin: 10px 0 10px; 
+  padding: 10px;
+  background-color: pink;
+}
+
+/* frase */
+
+
+/*ALINHAMENTO GERAL DE TEXTO*/
+.container{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 10px;
+}
+
+.container#faq {
+  display: block;
+  margin: 50px;
+}
+
+.container#fcu {
+  width: 90%;
+  margin: 40px;
+}
+
+.item{
+  width: 50%;
+  margin: 10px 10px;
+  display: block;
+}
+
+.recPic{
+  border-radius: 30px 30px 30px 30px;
+  height: 300px;
+  width: 300px;
+  filter: gray;
+  -webkit-filter: grayscale(1); 
+}
+
+.recPic:hover{
+   filter: grayscale(1)
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+a {
+  text-decoration: none;
+  color: #14173A;
+}
+
+/* rodapé */
+footer{
+  background-color: #152139;
+  border-radius: 30px 30px 0 0;
+  height: 100px;
+  margin: 0;
+  padding:0;
+  display: flex;
+  flex-direction: row;
+  margin: 0px 10px;
+}
+
+/*estilização de fotos no rodapé*/
+footer img {
+  border-radius: 50%;
+  margin: 20px 10px;
+  width: 75px;
+  height: 75px;
+
+  /*filter: gray;
+  -webkit-filter: grayscale(1); */
+
+}
+
+footer img:hover{
+   filter: grayscale(1)
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+#rodapeTxt{
+  margin-top: 25px;
+  margin-bottom:0;
+  margin-left: 30px;
+}
+
+/* css das imagens dos livros*/
+.rec1{
+  border-radius: 15px;
+  height: 250px;
+  width: auto;
+  /*filter: gray;
+  -webkit-filter: grayscale(1); */
+}

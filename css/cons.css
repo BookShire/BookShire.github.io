@@ -1,0 +1,6 @@
+body{
+  background-image:url("../assets/capas/fundo.png");
+  background-repeat: no-repeat;
+  background-size: cover; /* Resize the background image to cover the entire container */
+  
+}

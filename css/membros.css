@@ -1,0 +1,30 @@
+/* "letras" */
+h5{
+  font-size: 35px;
+  font-family: 'Staatliches', cursive;
+  margin-top: 20px;
+  color: #0D1527;
+}
+
+#membros h3{
+  font-size: 60px;
+  color: white;
+}
+
+/* detalhes */
+section{
+  padding: 20px;
+  margin: 20px 0;
+  width: 100%
+}
+
+#membros{
+  background-color: #C8D1E2;
+}
+
+#membros img{
+  border-radius: 10px;
+}
+
+
+

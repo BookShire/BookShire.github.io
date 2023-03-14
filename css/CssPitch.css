@@ -1,0 +1,19 @@
+#videoPitch{
+  position: flex;
+  right: 0;
+  bottom: 0;
+  min-width: 80%; 
+  height: 620px;
+
+}
+
+#h1{
+  color: black;
+  font-family: 'Staatliches', cursive;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+
+
+
