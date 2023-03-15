@@ -180,14 +180,14 @@ nav li a {
   background-color: #152139;
   background-image: url('../assets/capas/fundo.svg');
   background-repeat: no-repeat;
-  /*background-position: top;*/
+  background-position: top center;
   background-size: cover;
 }
 
 #header_frase{
   width: 100%;
   height: 100%;
-  padding: 5px;
+  padding-bottom: 10px;
 }
 
 #header_meio .embrulho{
@@ -320,9 +320,9 @@ footer img:hover{
 }
 
 #rodapeTxt{
-  margin-top: 25px;
-  margin-bottom:0;
-  margin-left: 30px;
+  text-align: left;
+  margin: 35px 25px 0 30px;
+
 }
 
 /* css das imagens dos livros*/
@@ -332,4 +332,41 @@ footer img:hover{
   width: auto;
   /*filter: gray;
   -webkit-filter: grayscale(1); */
+}
+
+@media only screen and (max-width: 600px) {
+  /*MOBILE FONTES*/
+  h1{font-size: 45px;}
+  h2{font-size: 15px;}
+  p{font-size: 18px;}
+
+  /*MOBILE HEADER*/
+  #header_fundo{
+    background-size: 125%;
+  }
+
+  .titleWebsite{
+    padding: 40px;
+    padding-bottom: 3px;
+  }
+
+  #header_frase{
+    margin: 0 50px;
+  }
+
+  /*MOBILE RODAPÉ*/
+  #rodapeTxt{
+    margin: 20px 0 0 20px;
+  }
+
+  footer img{
+    height: 50px;
+    width: 50px;
+  }
+
+  body {
+    width: 100%;
+    background-color: orange;
+  }
+
 }
