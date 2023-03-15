@@ -15,7 +15,7 @@
     display: block;
 }
 
-@media only screen and (max-width: 600px) {
+@media (min-width:320px) {
 
     #prototipo_teaser {
         display: flex;
