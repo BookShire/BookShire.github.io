@@ -14,3 +14,11 @@
     padding: 20px 40px;
     display: block;
 }
+
+@media only screen and (max-width: 600px) {
+
+    #prototipo_teaser {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

@@ -14,8 +14,6 @@ h5{
 /* detalhes */
 section{
   padding: 20px;
-  margin: 20px 0;
-  width: 100%
 }
 
 #membros{
@@ -26,5 +24,28 @@ section{
   border-radius: 10px;
 }
 
+.recPic{
+  border-radius: 30px;
+  height: 250px;
+  filter: grayscale(100%);
+}
 
+.recPic:hover{
+  filter: grayscale(0%);
+}
+
+@media only screen and (max-width: 600px) {
+  /*FONTES*/
+  h5{font-size: 18px;}
+  #membros h3{font-size: 26px; margin: 0;}
+  
+  .item{
+    margin: 5px;
+  }
+
+  .recPic{
+    height: 150px;
+    width: 100%;
+  }
+}
 
