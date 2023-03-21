@@ -302,8 +302,11 @@ footer img:hover{
   /*MOBILE FONTES*/
   h1{font-size: 45px;}
   h2{font-size: 16px;}
-  h3{font-size: 26px;}
+  h3{font-size: 22px;}
   p{font-size: 18px;}
+  li a{
+    font-size: 23px;
+  }
 
   /*MOBILE HEADER*/
   #header_fundo{
@@ -325,8 +328,8 @@ footer img:hover{
   }
 
   footer img{
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
   }
 
 }
