@@ -1,0 +1,87 @@
+/* "letras" */
+h5{
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 20px;
+  color: #1F3B6F;
+}
+
+li{
+  margin-left: 4rem;
+}
+
+#membros h3{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Advent Pro', sans-serif;
+  color: #D7DEEA;
+}
+
+/* detalhes */
+section{
+  padding: 20px;
+}
+
+#membros{
+  background-color: #FF6E21;
+}
+
+#membros img{
+  border-radius: 50%;
+}
+
+.recPic{
+  filter: grayscale(100%);
+  object-fit: cover;
+  border-radius: 30px;
+  height: 10rem;
+  width: 10rem;
+  margin: auto;
+}
+
+.recPic:hover{
+  filter: grayscale(0%);
+}
+
+#membros .container{
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
+
+.item{
+  margin: 0 12px;
+  width: 50%;
+  margin-bottom: 5rem;
+}
+
+#membros .item {
+  margin-bottom: 0;
+}
+
+.projeto .item img{
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  /*FONTES*/
+  h5{font-size: 18px;}
+  #membros h3{font-size: 26px; margin: 0;}
+  
+  .embrulho{
+    flex-direction: column;
+  }
+  
+  .item{
+    margin: 5px;
+    margin-bottom: 5rem;
+  }
+
+  .recPic{
+    height: 150px;
+    width: 100%;
+  }
+}
+

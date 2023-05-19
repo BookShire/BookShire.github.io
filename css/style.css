@@ -33,7 +33,6 @@ body {
 img{
   object-fit: cover;
   width: 100%;
-  height: 375px;
   /*height: 100%;*/
   margin:0;
   display: block;
@@ -107,8 +106,12 @@ p {
 }
 
 p a {
-  color:#ffbc47;
+  color:#1F3B6F;
   text-decoration: underline;
+}
+
+#enphasis{
+  color:#FF6D1F;
 }
 
 .textoIcone{
@@ -309,9 +312,9 @@ footer img:hover{
   }
 
   /*MOBILE HEADER*/
-  #header_fundo{
+  /*#header_fundo{
     background-size: 125%;
-  }
+  }*/
 
   .titleWebsite{
     padding: 40px;
