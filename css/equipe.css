@@ -81,15 +81,15 @@ section{
     margin-bottom: 2rem;
   }
 
-  /*.recPic{
+  .recPic{
     height: 3rem;
     width: 3rem;
-  }*/
+  }
 }
 
 @media screen and (min-width: 576px){
-  /*.recPic{
+  .recPic{
     height: 5rem;
     width: 5rem;
-  }*/
+  }
 }
