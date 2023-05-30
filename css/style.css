@@ -278,6 +278,7 @@ footer{
   background-color: #152139;
   border-radius: 30px 30px 0 0;
   height: 100px;
+  width: 100%;
   margin: 0;
   padding:0;
   display: flex;
@@ -288,8 +289,8 @@ footer{
 footer img {
   border-radius: 50%;
   margin: 20px 10px;
-  width: 75px;
-  height: 75px;
+  width: 3rem;
+  height: 3rem;
 }
 
 footer img:hover{
@@ -301,15 +302,16 @@ footer img:hover{
   margin: 35px 25px 0 30px;
 }
 
-@media only screen and (max-width: 600px) {
+@media all and (min-width: 380px) {
   /*MOBILE FONTES*/
   h1{font-size: 45px;}
   h2{font-size: 16px;}
   h3{font-size: 22px;}
   p{font-size: 18px;}
-  li a{
+  nav .embrulho li a{
     font-size: 23px;
   }
+  .rodapeTxt{font-size: 12px;}
 
   /*MOBILE HEADER*/
   /*#header_fundo{
@@ -331,8 +333,17 @@ footer img:hover{
   }
 
   footer img{
-    height: 45px;
-    width: 45px;
+    height: 2rem;
+    width: 2rem;
   }
 
+}
+
+@media all and (min-width: 500px) {
+  .rodapeTxt{font-size: 15px;}
+  
+  footer img{
+    height: 3rem;
+    width: 3rem;
+  }
 }

@@ -45,6 +45,14 @@ section{
   text-align: center;
 }
 
+#membros .item {
+  margin-bottom: 0;
+}
+
+#membros a{
+  margin: 0;
+}
+
 .item{
   margin: 0 12px;
   width: 50%;
@@ -55,8 +63,12 @@ section{
   margin-left: 4rem;
 }
 
-#membros .item {
-  margin-bottom: 0;
+
+#projetos > h3{
+  margin-left: 2rem;
+}
+#projetos .embrulho .item{
+  padding: 0 1rem;
 }
 
 .projeto .item img{
@@ -66,10 +78,11 @@ section{
   object-fit: cover;
 }
 
-@media screen and (min-width: 380px){
+@media all and (min-width: 380px){
   /*FONTES*/
   h5{font-size: 18px;}
   #membros h3{font-size: 24px; margin: 0; margin-bottom: 0.25rem;}
+  ul li p{font-size: 14px;}
   
   #projetos .embrulho{
     flex-direction: column;
@@ -87,9 +100,35 @@ section{
   }
 }
 
-@media screen and (min-width: 576px){
+@media all and (min-width: 560px){
+  /*FONTES*/
+  h5{font-size: 18px;}
+  #membros h3{font-size: 24px; margin: 0; margin-bottom: 0.25rem;}
+  ul li p{font-size: 18px;}
+  
+  #projetos .embrulho{
+    flex-direction: column;
+  }
+  
+  .item{
+    width: 100%;
+    margin: 5px;
+    margin-bottom: 2rem;
+  }
+
   .recPic{
-    height: 5rem;
-    width: 5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+  }
+}
+
+@media all and (min-width: 700px){
+  #projetos .embrulho{
+    flex-direction: row;
+  }
+
+  .recPic{
+    height: 6.5rem;
+    width: 6.5rem;
   }
 }
