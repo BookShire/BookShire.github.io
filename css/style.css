@@ -25,9 +25,13 @@ font-family: 'Staatliches', cursive; -- SUBTITULO
 
 body {
   padding-top: 40px;
+  padding-bottom: 3.15rem;
   background-color: white; 
   width: 100%;
   height: 100%;
+
+  position: relative;
+  min-height: 100vh;
 }
 
 img{
@@ -71,7 +75,6 @@ h1 {
 /* frase de autor*/
 h2 {
   font-family: 'Roboto', sans-serif;
-  /*font-family: 'Staatliches', cursive;*/
   color: #C8D1E2;
   padding: 5px;
   padding-left: 0;
@@ -273,36 +276,17 @@ a {
   color: #14173A;
 }
 
-/* RODAPÉ */
-footer{
-  background-color: #152139;
-  border-radius: 30px 30px 0 0;
-  height: 100px;
-  width: 100%;
-  margin: 0;
-  padding:0;
-  display: flex;
-  flex-direction: row;
-  margin: 0px 10px;
+@media all and (max-width: 750px) {
+  body{
+    padding-bottom: 2.6rem;
+  }
 }
 
-footer img {
-  border-radius: 50%;
-  margin: 20px 10px;
-  width: 3rem;
-  height: 3rem;
-}
+@media all and (max-width: 575px) {
+  body{
+    padding-bottom: 4rem;
+  }
 
-footer img:hover{
-   filter: grayscale(1);
-}
-
-#rodapeTxt{
-  text-align: left;
-  margin: 35px 25px 0 30px;
-}
-
-@media all and (min-width: 380px) {
   /*MOBILE FONTES*/
   h1{font-size: 45px;}
   h2{font-size: 16px;}
@@ -325,25 +309,5 @@ footer img:hover{
 
   #header_frase{
     margin: 0 50px;
-  }
-
-  /*MOBILE RODAPÉ*/
-  #rodapeTxt{
-    margin: 20px 0 0 20px;
-  }
-
-  footer img{
-    height: 2rem;
-    width: 2rem;
-  }
-
-}
-
-@media all and (min-width: 500px) {
-  .rodapeTxt{font-size: 15px;}
-  
-  footer img{
-    height: 3rem;
-    width: 3rem;
   }
 }
