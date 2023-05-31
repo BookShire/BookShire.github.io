@@ -21,13 +21,13 @@ class Rodape extends HTMLElement{
         iconRedesSociais.setAttribute('class', 'redes');
 
             const imgTikTok = document.createElement('img');
-                imgTikTok.setAttribute('src','../assets/rodape/iconTikTok.svg');
+                imgTikTok.setAttribute('src','../../assets/rodape/iconTikTok.svg');
                 imgTikTok.setAttribute('alt','Logo do TikTok')
             const imgInsta = document.createElement('img');
-                imgInsta.setAttribute('src','../assets/rodape/iconInstagram.svg');
+                imgInsta.setAttribute('src','../../assets/rodape/iconInstagram.svg');
                 imgInsta.setAttribute('alt','Logo do Instagram')
             const imgMail = document.createElement('img');
-                imgMail.setAttribute('src','../assets/rodape/iconEmail.svg');
+                imgMail.setAttribute('src','../../assets/rodape/iconEmail.svg');
                 imgMail.setAttribute('alt','Ícone de E-mail')
 
             const tiktok = document.createElement('a');
