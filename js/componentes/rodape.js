@@ -21,7 +21,7 @@ class Rodape extends HTMLElement{
         iconRedesSociais.setAttribute('class', 'redes');
 
             const imgTikTok = document.createElement('img');
-                imgTikTok.setAttribute('src','../../assets/rodape/iconTikTok.svg');
+                imgTikTok.setAttribute('src','../../assets/rodape/iconTikTok.png');
                 imgTikTok.setAttribute('alt','Logo do TikTok')
             const imgInsta = document.createElement('img');
                 imgInsta.setAttribute('src','../../assets/rodape/iconInstagram.svg');

@@ -45,7 +45,7 @@ img{
 
 main{
   height: auto;
-  
+  padding: 20px;
   padding-bottom: 60px;
 }
 
@@ -79,7 +79,7 @@ h2 {
   color: #C8D1E2;
   padding: 5px;
   padding-left: 0;
-  font-size: 20px;
+  font-size: 22px;
   text-align: center;
 }
 
@@ -256,9 +256,14 @@ nav li a {
 
 /*ALINHAMENTO GERAL DE TEXTO*/
 .container{
+  width: 85%;
+  margin: auto;
   display: flex;
-  flex-direction: row;
-  margin: 20px 10px;
+  flex-direction: column;
+}
+
+.container .embrulho{
+  width: 100%;
 }
 
 .container#faq {

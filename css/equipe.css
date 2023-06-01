@@ -14,10 +14,6 @@ h5{
 }
 
 /* detalhes */
-section{
-  padding: 20px;
-}
-
 #membros{
   background-color: #FF6E21;
 }
@@ -41,6 +37,7 @@ section{
 
 #membros .container{
   width: 75%;
+  flex-direction: row;
   margin: auto;
   text-align: center;
 }
@@ -67,8 +64,9 @@ section{
 #projetos > h3{
   margin-left: 2rem;
 }
-#projetos .embrulho .item{
-  padding: 0 1rem;
+
+.space{
+  width: 2rem;
 }
 
 .projeto .item img{
