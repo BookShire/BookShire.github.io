@@ -46,8 +46,8 @@ class Rodape extends HTMLElement{
 
             mail.appendChild(imgMail);
             iconRedesSociais.appendChild(mail);
-            tiktok.appendChild(imgTikTok);
-            iconRedesSociais.appendChild(tiktok);
+            // tiktok.appendChild(imgTikTok);
+            // iconRedesSociais.appendChild(tiktok);
             insta.appendChild(imgInsta);
             iconRedesSociais.appendChild(insta);
         

@@ -54,7 +54,7 @@ main img{
 }
 
 .embrulho{
-  align-items: center;
+  /* align-items: center; */
   width: 90%;
   height: 100%;
   margin-right: auto;
