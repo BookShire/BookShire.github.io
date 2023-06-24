@@ -16,6 +16,7 @@ h5{
 /* detalhes */
 #membros{
   background-color: #FF6E21;
+  padding: 15px 0;
 }
 
 #membros img{
@@ -44,10 +45,6 @@ h5{
 
 #membros .item {
   margin-bottom: 0;
-}
-
-#membros a{
-  margin: 0;
 }
 
 .item{

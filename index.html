@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/index.css" />
   <script src="/js/frases.js" defer></script>
+  <script src="js/componentes/card.js" defer></script>
   <script src="js/componentes/rodape.js" defer></script>
 
 </head>
@@ -18,64 +19,41 @@
 <body>
   <nav>
     <ul class="embrulho">
-      <li class="active"><a title="Página inicial" href="index.html">Home</a></li>
-      <li class="nav"><a title="Sobre nós" href="/html/historia.html">Sobre nós</a></li>
-      <li class="nav"><a title="Pitch" href="/html/pitch.html">Pitch</a></li>
+      <div class="ulItem tituloBarra" onclick="window.location='index.html';">
+        <img src="assets/logos/BookShire.png" alt="Logo do BookShire" class="logoNav">
+        <h1 class="tituloBarra">BookShire</h1>
+      </div>
+      <div class="ulItem">
+        <li class="active"><a title="Página inicial" href="index.html">Home</a></li>
+        <li class="nav"><a title="Sobre nós" href="/html/historia.html">Sobre nós</a></li>
+        <li class="nav"><a title="Pitch" href="/html/pitch.html">Pitch</a></li>
+      </div>
     </ul>
   </nav>
 
-  <section id="header_fundo">
-    <div class="embrulho">
-        <div class="titleWebsite">
-          <h1>BookShire</h1>
-        </div>
+    <div id="banner" onclick="abrirFigma()">
+      <img src="assets/banners/banner_teste_app.gif" alt="Teste já nossa aplicação!">
+    </div>
 
-      </div>
-
-      <div class="embrulho">
-        <div id="header_frase">
-          <h2>A leitura do mundo precede a leitura da palavra - Paulo Freire</h2>
-        </div>
-      </div>
-    <!--       barra de navegação -->
-    </section>
+    <br><br><br>
 
     <main>
-    <div class="container">
-      <h3>O que é o Bookshire?</h3>
-        <p>O BookShire é um projeto de alunas do 3° Ano do ensino médio do Técnico em Desenvolvimento de Sistemas da Etec Abdias do Nascimento. Trata-se de uma plataforma para vendas, doações e trocas de livros usados. </p>
-      <br>
-
-      <h3>Qual o nosso objetivo?</h3>
-          <p> A alta dos preços dos livros e escassez de livrarias em algumas regiões no interior do país, vem dificultando o acesso à literatura para leitores de baixa renda, impactando com maior intensidade os estudantes brasileiros que dependem desses livros.
-        <br><br>
-          Sendo assim, o BookShire visa fornecer uma solução alternativa mais barata para este problema através da tecnologia.
-        </p>
-        <br><br>
-    </div>
-  
-    <!--PROTOTIPO TEASER-->
-    <div id="prototipo_teaser" class ="embrulho">
-      <img src = "assets/capas/prototipoTeaser.gif"  >
-
-      <div class="container">
-        <h3>Teste nosso protótipo de primeira mão!</h3>
-
-        <p>
-          Acesse a visualização das nossas telas pelo Figma no seu navegador e confira
-          as funcionalidades do nosso app em fase de desenvolvimento. 
-        </p><br>
+      <div class="embrulho">
+        <div class="card">
+          <img src="assets/icons/icon_Critica.png">
+          <h3>Críticas sobre o projeto?</h3>
+          <p>Compartilhe sua opinião sobre o app anonimamente.</p>
+          <button onclick="criticaForms()">Aqui</button>
+        </div>
         
-        <button onclick="abrirFigma()">Acessar agora</button> <br><br><br>
-
-        <h3>Críticas sobre o projeto?</h3>
-        <p>Compartilhe conosco!</p><br>
-
-        <button onclick="criticaForms()">Enviar anonimamente</button>
+        <div class="card">
+          <img src="assets/icons/icon_Pesquisa.png">
+          <h3>Responda nossa Pesquisa!</h3>
+          <p>Ajude nossa equipe respondendo este breve formulário.</p>
+          <button onClick="pesquisaForms()">Aqui</button>
+        </div>
       </div>
-    </div>
-
-  </main>
+    </main>
 
   <!-- RODAPÉ -->
   <rodape-bookshire></rodape-bookshire>
@@ -88,6 +66,10 @@
 
     function criticaForms(){
       window.open('https://forms.gle/ETc5Au9sqFpE78Xe6');
+    }
+
+    function pesquisaForms(){
+      window.open('https://forms.gle/Cq5G8m2VwpcJRqia8');
     }
   </script>
 </body>

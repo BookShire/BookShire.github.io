@@ -73,6 +73,15 @@ h1 {
   text-align: left;
 }
 
+.tituloBarra{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  color: #14173A;
+  font-size: 3.5rem; 
+  cursor: pointer;
+}
+
 /* frase de autor*/
 h2 {
   font-family: 'Roboto', sans-serif;
@@ -119,6 +128,7 @@ p a {
 }
 
 .textoIcone{
+  display: block;
   margin: auto;
   width: 250px;
   height: 250px;
@@ -127,6 +137,7 @@ p a {
 /*BARRA DE NAVEGAÇÃO*/
 nav{
   top: 0;
+  padding: 5px;
   overflow: hidden;
   position: fixed;
   width: 100%;
@@ -136,37 +147,50 @@ nav{
   filter: drop-shadow(0 6px 10px rgba(0,0,0,.04)) drop-shadow(0 1px 18px rgba(0,0,0,.06)) drop-shadow(0 3px 5px rgba(0,0,0,.12));
 }
 
+.logoNav{
+  height: 4rem;
+  width: 4rem;
+}
+
 nav ul{
   list-style-type: none;
   overflow: hidden;
+  justify-content: space-between;
 }
 
-nav ul li{
+.ulItem{
+  gap: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ulItem li{
   float: left;
   padding: 5px; 
 }
 
-nav li a {
+.ulItem li a {
   color: #0D1527;
-  padding: 30px 20px 30px 20px; 
+  padding: 10px; 
   font-size: 25px;
   text-decoration: none;
   font-family: 'Staatliches', cursive;
 }
 
 /* essa classe é a que mexe no item da página que vc esta vendo da <nav> */
-.active {
-  height: 100%;
+.ulItem .active {
+  /* height: 100%; */
   display: block;
   border-bottom: 5px solid; 
   border-color: #23458A;
 }
 
 .active:hover{
-  background-color: #C8D1E2;
+  border-color: #C8D1E2;
 }
 
-.nav {
+.ulItem .nav {
   display: block;
   border-bottom: 5px solid; 
   border-color: white;
@@ -174,8 +198,9 @@ nav li a {
 }
 
 .nav:hover {
-  border-color: #C8D1E2;
-  background-color: #C8D1E2;
+  display: block;
+  border-bottom: 5px solid; 
+  border-color: #23458A;
 }
 
 
@@ -283,8 +308,16 @@ a {
 }
 
 @media all and (max-width: 750px) {
+  .tituloBarra{
+    font-size: 2rem;
+  }
+
   body{
     padding-bottom: 2.6rem;
+  }
+
+  .ulItem.tituloBarra{
+    display: none;
   }
 }
 
@@ -293,8 +326,12 @@ a {
     padding-bottom: 4rem;
   }
 
+  .ulItem.tituloBarra{
+    display: none;
+  }
+
   /*MOBILE FONTES*/
-  h1{font-size: 45px;}
+  h1{font-size: 40px;}
   h2{font-size: 16px;}
   h3{font-size: 22px;}
   p{font-size: 18px;}

@@ -8,9 +8,20 @@
 
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/equipe.css" />
+    <link rel="stylesheet" href="../css/index.css" />
 
     <script src="/js/frases.js" defer></script>
     <script src="../js/componentes/rodape.js" defer></script>
+
+    <script defer>
+      function abrirFigma(){
+        window.open('https://www.figma.com/proto/A857iR5L78vlbvgpo67oCM?node-id=0%3A1');
+      }
+  
+      function criticaForms(){
+        window.open('https://forms.gle/ETc5Au9sqFpE78Xe6');
+      }
+    </script>
 </head>
 <body>
     <header id="header_fundo">
@@ -30,14 +41,65 @@
       <!--       barra de navegação -->
       <nav>
         <ul class="embrulho">
+          <div class="ulItem tituloBarra" onclick="window.location='../index.html';">
+            <img src="../assets/logos/BookShire.png" alt="Logo do BookShire" class="logoNav">
+            <h1 class="tituloBarra">BookShire</h1>
+          </div>
+          <div class="ulItem">
+            <li class="nav"><a title="Página inicial" href="../index.html">Home</a></li>
+            <li class="active"><a title="Sobre nós" href="/html/historia.html">Sobre nós</a></li>
+            <li class="nav"><a title="Pitch" href="/html/pitch.html">Pitch</a></li>
+          </div>
+        </ul>
+      </nav>
+<!--       
+      <nav>
+        <ul class="embrulho">
           <li class="nav"><a title="Página inicial" href="../index.html">Home</a></li>
           <li class="active"><a title="Sobre nós" href="/html/historia.html">Sobre nós</a></li>
           <li class="nav"><a title="Pitch" href="/html/pitch.html">Pitch</a></li>
         </ul>
-      </nav>
+      </nav> -->
     </header>
 
     <main>
+
+      <div class="container">
+        <h3>O que é o Bookshire?</h3>
+          <p>O BookShire é um projeto de alunas do 3° Ano do ensino médio do Técnico em Desenvolvimento de Sistemas da Etec Abdias do Nascimento. Trata-se de uma plataforma para vendas, doações e trocas de livros usados. </p>
+        <br>
+  
+        <h3>Qual o nosso objetivo?</h3>
+            <p> A alta dos preços dos livros e escassez de livrarias em algumas regiões no interior do país, vem dificultando o acesso à literatura para leitores de baixa renda, impactando com maior intensidade os estudantes brasileiros que dependem desses livros.
+          <br><br>
+            Sendo assim, o BookShire visa fornecer uma solução alternativa mais barata para este problema através da tecnologia.
+          </p>
+          <br><br>
+      </div>
+    
+      <!--PROTOTIPO TEASER-->
+      <!-- <div id="prototipo_teaser" class ="embrulho">
+        <img src = "../assets/capas/prototipoTeaser.gif"  >
+  
+        <div class="container">
+          <h3>Teste nosso protótipo de primeira mão!</h3>
+  
+          <p>
+            Acesse a visualização das nossas telas pelo Figma no seu navegador e confira
+            as funcionalidades do nosso app em fase de desenvolvimento. 
+          </p><br>
+          
+          <button onclick="abrirFigma()">Acessar agora</button> <br><br><br>
+  
+          <h3>Críticas sobre o projeto?</h3>
+          <p>Compartilhe conosco!</p><br>
+  
+          <button onclick="criticaForms()">Enviar anonimamente</button>
+        </div>
+      </div> -->
+
+      <!-- DIVISAO FODA -->
+
     <section id = "projetos">
         <!-- aqui vai a parte com foto de todos os projetos q a gnt tem-->
       <div class="container">

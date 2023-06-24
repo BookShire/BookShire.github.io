@@ -1,3 +1,76 @@
+#banner img{
+    cursor: pointer;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+main .embrulho{
+    width: 60%;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+
+    /* border: 2px solid black; */
+    box-shadow: 0 0 20px #1F3B6F;
+    border-radius: 2.5rem;
+}
+
+.card p{
+    text-align: center;
+}
+
+.card img{
+    border-radius: 0;
+    height: 6rem;
+    width: 6rem;
+}
+
+.card button{
+    padding: .5rem 2rem;
+    margin-top: 1rem;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 2rem;
+    border: none;
+    font-size: 17px;
+    float: left;
+    background: #152139;
+    color: white;
+    cursor: pointer;
+}
+
+.card button:hover{
+    background: #8496b9;
+}
+
+@media all and (max-width: 750px) {
+    main .embrulho{
+        width: 80%;
+        gap: 2rem;
+    }
+}
+
+@media all and (max-width: 575px) {
+
+    #banner img{
+        height: 12rem;
+    }
+
+    main .embrulho{
+        flex-direction: column;
+        width: 80%;
+        gap: 2rem;
+    }
+}
+
+/*DAQUI PRA BAIXO EU LEVEI PRA HISTÓRIA.HTML, TA TD COMENTADO LA*/
+/* 
 #prototipo_teaser{
     margin-top: 15px;
     width: 70%;
@@ -24,4 +97,4 @@
         flex-direction: column-reverse;
         align-items: center;
     }
-}
+} */
